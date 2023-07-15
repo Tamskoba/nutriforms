@@ -1,0 +1,776 @@
+
+2023-07-09 08:15:06 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =
+L'ancien mot de passe est erroné.
+Fin de la recupération des données
+
+2023-07-09 08:15:14 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'password'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =
+L'ancien mot de passe est erroné.
+Fin de la recupération des données
+
+2023-07-09 08:15:20 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'tata'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =
+L'ancien mot de passe est erroné.
+Fin de la recupération des données
+
+2023-07-09 16:13:04 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =
+L'ancien mot de passe est erroné.
+Fin de la recupération des données
+
+2023-07-09 16:43:27 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-09 16:47:15 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-09 16:49:01 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-09 16:49:03 ---> forms.php
+
+2023-07-13 02:03:26 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 02:05:54 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 02:53:00 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-13 02:57:29 ---> forms.php
+
+2023-07-13 03:03:46 ---> forms.php
+
+2023-07-13 03:03:46 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 03:09:46 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-13 03:18:02 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 05:51:02 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 05:52:03 ---> forms.php
+
+2023-07-13 05:52:03 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 06:42:56 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 06:42:58 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-13 06:54:26 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 06:54:30 ---> forms.php
+
+2023-07-13 06:54:30 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:07:26 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 07:07:32 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+---> addUser.php
+INSERT INTO clients (firstname, name, email, phone, level, pwd) VALUES (tad,teddy,teddy@email.com,06345698,3,$2y$10$IqkNBJOyL1BVSz1w8teEmOGd5xvffA8tDlSvD6XzAkPFMEtxwN.qS)
+SELECT * FROM clients WHERE email=teddy@email.com
+INSERT INTO candidose_digestive (clientID) VALUES (10)
+INSERT INTO hormonal (clientID) VALUES (10)
+Les modifications ont été enregistrées.
+
+2023-07-13 07:08:18 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-13 07:08:41 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-13 07:08:51 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-13 07:10:10 ---> forms.php
+
+2023-07-13 07:10:10 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:14:18 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-13 07:15:34 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-13 07:16:20 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 07:16:25 ---> forms.php
+
+2023-07-13 07:16:25 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:33:24 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-13 07:33:39 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 07:33:41 ---> forms.php
+
+2023-07-13 07:33:41 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:48:49 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 07:48:51 ---> forms.php
+
+2023-07-13 07:48:51 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:50:59 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-13 07:51:01 ---> forms.php
+
+2023-07-13 07:51:01 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initSNC.php
+SESSION[userid]=1
+SELECT * FROM snc WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initPOT.php
+SESSION[userid]=1
+SELECT * FROM potassium WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initVITD.php
+SESSION[userid]=1
+SELECT * FROM vitamine_d WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initANX.php
+SESSION[userid]=1
+SELECT * FROM anxiete WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initGB.php
+SESSION[userid]=1
+SELECT * FROM gaba WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initLGS.php
+SESSION[userid]=1
+SELECT * FROM lgs WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initSPA.php
+SESSION[userid]=1
+SELECT * FROM spasmophile WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initSOM.php
+SESSION[userid]=1
+SELECT * FROM sommeil WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-13 07:51:01 ---> initDTX.php
+SESSION[userid]=1
+SELECT * FROM detox WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 05:40:34 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-14 05:40:40 ---> forms.php
+
+2023-07-14 05:40:40 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 05:40:40 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 05:40:40 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:21:33 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:21:33 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:21:33 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:26:05 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:26:05 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:26:05 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:29:11 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:29:11 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:29:11 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:29:27 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-14 06:32:21 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:32:21 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:32:21 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:37:05 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:37:05 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:37:05 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:51:06 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 06:51:06 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 06:51:06 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:00:01 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:00:01 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:00:01 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:05:35 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-14 07:07:09 ---> forms.php
+
+2023-07-14 07:07:09 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:07:09 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:07:09 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:10:26 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:10:26 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:10:26 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:18:26 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:18:27 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:18:27 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:20:09 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:20:09 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:20:09 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:20:45 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:20:45 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:20:45 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:58:27 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:58:27 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:58:27 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:59:53 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-14 07:59:53 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 07:59:53 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-14 08:11:58 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-15 05:38:44 ---> forms.php
+
+2023-07-15 05:38:44 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 05:38:44 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 05:38:44 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 12:15:04 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-15 12:27:09 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-15 12:30:11 ---> forms.php
+
+2023-07-15 12:30:11 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 12:30:11 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 12:30:11 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:37:25 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:37:25 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:37:25 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:39:22 ---> login.php
+SELECT * FROM clients WHERE email = 'tams@gmail.com'
+Password = 'douala@2012'
+Nombre de lignes =1
+Verification de l'ancien mot de passe =1
+Fin de la recupération des données
+
+2023-07-15 13:39:27 ---> forms.php
+
+2023-07-15 13:39:27 ---> initForm.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:39:27 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:39:27 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:44:23 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:44:23 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:44:23 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:44:36 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:44:37 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:44:37 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:46:39 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:46:39 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:46:39 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:52:44 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:52:44 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:52:44 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:59:49 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 13:59:49 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 13:59:49 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 14:17:45 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 14:17:45 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 14:17:45 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 14:18:29 ---> initUsers.php
+SELECT * FROM clients
+Les données ont été recupérées
+
+2023-07-15 14:19:07 ---> initForm.php
+POST[id]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 14:19:07 ---> forms.php
+SESSION['hasFormValues'] = 1
+
+2023-07-15 14:19:07 ---> initCD.php
+SESSION[userid]=1
+SELECT * FROM candidose_digestive WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
+
+2023-07-15 14:19:07 ---> initHormonal.php
+SESSION[userid]=1
+SELECT * FROM hormonal WHERE clientID = '1'
+Nombre de lignes =1
+Les données ont été recupérées
