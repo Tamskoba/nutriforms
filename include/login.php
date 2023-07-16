@@ -105,10 +105,10 @@ if(isset($_POST))
     }
     
     echo json_encode($results);
-    /*ob_start();
+    ob_start();
     var_dump($results);
      $result = ob_get_clean();    
-    fwrite($file, "results = ".$result. PHP_EOL);*/
+    fwrite($file, "results = ".$result. PHP_EOL);
     
     fwrite($file, "Fin de la recupération des données". PHP_EOL);
 }else{

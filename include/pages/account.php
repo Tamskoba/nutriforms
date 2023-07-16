@@ -3,16 +3,99 @@ session_start();
 
 ?>
 <div class="row">
-    <div class="col-11 formheader">
+
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <span class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="button" id="co">
+                <i class="fas fa-user"></i>
+                Coordonnées
+            </span>
+        </li>
+        <li class="nav-item" role="presentation">
+            <span class="nav-link " data-bs-toggle="tab"  aria-selected="false" tabindex="-1" role="button" id="pw">
+                <i class="fa-solid fa-key"></i>
+                Mot de passe
+            </span>
+        </li>
+        <li class="nav-item" role="presentation">
+            <span class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="button" id="cl">
+                <i class="fa-solid fa-users"></i>
+                Utilisateurs
+            </span>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade show px-2 active" id="mydata" role="tabpanel">
+            <div id="accForm">
+    			<table>
+    				<tr>
+    					<td><label>Prénom</label></td>
+    					<td><input type="text" id="firstname"></td>
+    				</tr>
+    				<tr>
+    					<td><label>Nom</label></td>
+    					<td><input type="text" id="name"></td>
+    				</tr>
+    				<tr>
+    					<td><label>Email</label></td>
+    					<td><input type="text" id="email"></td>
+    				</tr>
+    				<tr>
+    					<td><label>Téléphone</label></td>
+    					<td><input type="text" id="phone"></td>
+    				</tr>  
+    				<tr>
+    					<td colspan="2" class="float-end">
+                            <button id="mysubmit" type="button" class="btn btn-primary">Modifier</button>
+                        </td>
+    				</tr>                        				    				    				   				    				
+    			</table>                                   
+                <div id="myloader" style="display:none">Sauvegarde en cours...</div>                  
+                <div id="myoutput"></div>  	
+        	</div>
+        </div>
+        <div class="tab-pane fade px-2" id="mypwd" role="tabpanel">
+            <div id="pwdForm">
+    			<table>
+    				<tr>
+    					<td><label>Ancien mot de passe</label></td>
+    					<td><input type="password" id="apwd"></td>
+    				</tr>
+    				<tr>
+    					<td><label>Nouveau mot de passe</label></td>
+    					<td><input type="password" id="npwd"></td>
+    				</tr>
+    				<tr>
+    					<td><label>Confirmer le nouveau mot de passe</label></td>
+    					<td><input type="password" id="cpwd"></td>
+    				</tr>
+                    <tr>
+    					<td colspan="2" class="float-end">
+                            <button id="pwsubmit" type="button" class="btn btn-secondary disabled">Modifier</button>
+                        </td>
+    				</tr>    				    				    				   				    				
+    			</table>                                   
+                <div id="pwloader" style="display:none">Sauvegarde en cours...</div>                  
+                <div id="pwoutput"></div>          	
+        	</div>
+        </div>
+        <div class="tab-pane fade px-2" id="myusers" role="tabpanel">
+            <div id="usersForm">
+        	</div>
+        </div>
+    </div>	
+
+
+<!--     <div class="col-11 formheader">
     	<div class="menuitem2" id="co">Coordonnées</div>
     	<div class="menuitem2" id="pw">Mot de passe</div>
     	<?php 
     	if($_SESSION["Data"]["level"]<=1)
     	    echo "<div class='menuitem2' id='cl'>Clients</div>"; 
     	?>   	    	   	
-    </div>
+    </div> -->
 </div>
-<div id="mydata">
+<!-- <div id="mydata">
     <div class="row">
     	<div class="col-11">
         	<div id="accForm">
@@ -73,7 +156,7 @@ session_start();
         	</div>
         </div>
     </div>
-</div>        	
+</div>     -->    	
 <script>
 	$(document).ready(function(){
 		var JSONData = <?php echo json_encode($_SESSION["Data"]);?>; 
@@ -94,25 +177,34 @@ session_start();
         			$('#mydata').show();
         			$('#mypwd').hide();
         			$('#myusers').hide();
-        			$('#co').removeClass().addClass("menuitem_active2");
-        			$('#pw').removeClass().addClass("menuitem2");
-        			$('#cl').removeClass().addClass("menuitem2");	        			
+        			$('#co').addClass("active");
+        			$('#pw').removeClass("active");
+        			$('#cl').removeClass("active");
+                    $('#mydata').addClass("show active");
+                    $('#mypwd').removeClass("show active");
+                    $('#myusers').removeClass("show active");	        			
         			break;
         		case 2:
         			$('#mydata').hide();
         			$('#mypwd').show();
         			$('#myusers').hide();
-        			$('#co').removeClass().addClass("menuitem2");
-        			$('#pw').removeClass().addClass("menuitem_active2");
-        			$('#cl').removeClass().addClass("menuitem2");	          			
+        			$('#co').removeClass("active");
+        			$('#pw').addClass("active");
+        			$('#cl').removeClass("active");
+                    $('#mydata').removeClass("show active");
+                    $('#mypwd').addClass("show active");
+                    $('#myusers').removeClass("show active");	                    	          			
         			break;
         		case 3:
         			$('#mydata').hide();
         			$('#mypwd').hide();
         			$('#myusers').show();
-        			$('#co').removeClass().addClass("menuitem2");
-        			$('#pw').removeClass().addClass("menuitem2");
-        			$('#cl').removeClass().addClass("menuitem_active2");	        			
+        			$('#co').removeClass("active");
+        			$('#pw').removeClass("active");
+        			$('#cl').addClass("active");
+                    $('#mydata').removeClass("show active");
+                    $('#mypwd').removeClass("show active");
+                    $('#myusers').addClass("show active");	                    	        			
         			break;            			
         	}
         }

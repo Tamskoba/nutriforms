@@ -3,16 +3,19 @@ session_start();
 
 ?>
 <div class="row">
-    <div class="col-11">
-		<h4 style="float:left;">Liste des utilisateurs</h4>
-		<div class="menuitem" id="aj" style="float:right;">Ajouter</div>  	    	   	
+    <div class="col-11 py-4">
+		<h4 style="float:left;">Liste des utilisateurs</h4>&nbsp;&nbsp;
+		<button id="aj" type="button" class="btn btn-primary">
+			<i class="fa-solid fa-user-plus"></i>
+			Ajouter
+		</button>	    	   	
     </div>
 </div>
 <div class="row">
 	<div id="users" class="col-11"></div>
 </div>
 <div class="row">
-	<div id="user" class="col-11 modifuser">
+	<div id="user" class="col-11 modifuser pt-3">
 		<table>
 			<tr>
 				<td><label>Prénom</label></td>
@@ -30,7 +33,7 @@ session_start();
 				<td><label>Téléphone</label></td>
 				<td><input type="text" id="uphone"></td>
 			</tr>
-			<?php 
+			<?php
 			     if($_SESSION["Data"]["level"]==0)
 			     {
 			         echo "<tr>";
@@ -48,15 +51,28 @@ session_start();
 			?>
 			<tr>
 				<td colspan="2"><input type="hidden" id="userid"></td>
-			</tr>			    				    				    				   				    				
+			</tr>
+			<tr>
+				<td class="float-end">
+					<button id="ussubmit" type="button" class="btn btn-primary">
+						<i class="fa-solid fa-user-pen"></i>
+						Modifier
+					</button>
+				</td>
+				<td class="float-end">
+					<button id="usclose" type="button" class="btn btn-secondary">
+						<i class="fa-solid fa-xmark"></i>
+						Fermer
+					</button>
+				</td>
+			</tr>  						    				    				    				   				    				
 		</table>
-        <div id="ussubmit" class="connectbtn">Modifier</div>
         <div id="usloader" style="display:none">Sauvegarde en cours...</div>                  
         <div id="usoutput"></div>  	  	
 	</div>
 </div>
 <div class="row">
-	<div id="adduser" class="col-11 modifuser">
+	<div id="adduser" class="col-11 modifuser pt-3">
 		<table>
 			<tr>
 				<td><label>Prénom</label></td>
@@ -99,9 +115,22 @@ session_start();
 			         echo "</tr>"; 
 			     }
 			     
-			?>		    				    				    				   				    				
+			?>
+			<tr>
+				<td class="float-end">
+					<button id="asubmit" type="button" class="btn btn-primary">
+						<i class="fa-solid fa-plus"></i>
+						Ajouter
+					</button>
+				</td>
+				<td class="float-end">
+					<button id="aclose" type="button" class="btn btn-secondary">
+						<i class="fa-solid fa-xmark"></i>
+						Fermer
+					</button>
+				</td>				
+			</tr> 					    				    				    				   				    				
 		</table>
-        <div id="asubmit" class="connectbtn">Ajouter</div>
         <div id="aloader" style="display:none">Sauvegarde en cours...</div>                  
         <div id="aoutput"></div>  	  	
 	</div>
@@ -109,6 +138,15 @@ session_start();
 <script>
 $('#aj').click(function(){
 	$("#adduser").show();
+	$("#user").hide();	
+});
+
+$('#aclose').click(function(){
+	$("#adduser").hide();
+});
+
+$('#usclose').click(function(){
+	$("#user").hide();
 });
 
 $('#ussubmit').click(function(){
