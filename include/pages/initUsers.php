@@ -14,6 +14,8 @@ try {
     $text = "SELECT * FROM clients";
     if($_SESSION["Data"]["level"]>0)
         $text .= " WHERE level = 3";
+    if($_SESSION["Data"]["level"]==4)
+        $text .= " AND id >=9";
     
     fwrite($file, $text . PHP_EOL);
     $requete = $connexion->prepare($text);

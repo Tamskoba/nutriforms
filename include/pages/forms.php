@@ -53,7 +53,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
 <div id="formGRL" name="quest"></div> -->
 <div class="row">
 	<div class="col-11 formsubmit">
-		<div id="formSubmit" class="sauve">Sauvegarder</div>
+        <button id="formSubmit" type="button" class="btn btn-primary btn-lg float-end">Sauvegarder</button>
         <div id="loader" style="display:none">Sauvegarde en cours...</div>                  
         <div id="output"></div> 
 	</div>
@@ -67,9 +67,9 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>TERRAIN</div>";
-            text += "        			<div id='colexpand' class='col-1 qhright'></div>";
+            text += "      			<th class='table-primary' colspan='2'>";
+            text += "        			<div class='col-8 float-start'>TERRAIN</div>";
+            text += "        			<div id='colexpand' class='col-1 float-end'><i class='fa-solid fa-angles-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>"; 
             text += "<?php                        
@@ -86,7 +86,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr1'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -101,7 +101,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                         
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr1'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt1'>Total&nbsp;&nbsp;".$q1+$q2+$q3+$q4+$q5."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt1'>Total&nbsp;&nbsp;".$q1+$q2+$q3+$q4+$q5."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -114,19 +114,20 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES</div>";
-            text += "        			<div id='colexpand2' class='col-1 qhright'></div>";
+            text += "      			<th class='table-primary' colspan='2'>";
+            text += "        			<div class='col-8 float-start'>SYMPTÔMES</div>";
+            text += "        			<div id='colexpand2' class='col-1 float-end'><i class='fa-solid fa-angles-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>";
             text += "        	<tr>";
-            text += "      			<th class='qheader2' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES GENERAUX</div>";
-            text += "        			<div id='colexpand3' class='col-1 qhright'></div>";
+            text += "      			<th class='table-secondary' colspan='2'>";
+            text += "        			<div class='col-8 float-start fw-normal'>SYMPTÔMES GENERAUX</div>";
+            text += "        			<div id='colexpand3' class='col-1 float-end'><i class='fa-solid fa-angle-down'></i></div>";
             text += "        		</th>";			
-            text += "        	</tr>";            
+            text += "        	</tr>";     
             text += "<?php                        
                         $text = "";
+
                         $titles = array(1=>"Consommez-vous du pain/féculents/sucreries ?",
                                            "Avez-vous envie de consommer de l'alcool? En consommez-vous ?",
                                            "Souffrez-vous de fatigue chronique ?",
@@ -144,7 +145,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr2'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i+$nb1."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i+$nb1."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -159,7 +160,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
 
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr2'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt2'>Total&nbsp;&nbsp;".$q6+$q7+$q8+$q9+$q10+$q11+$q12+$q13+$q14."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt2'>Total&nbsp;&nbsp;".$q6+$q7+$q8+$q9+$q10+$q11+$q12+$q13+$q14."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -172,9 +173,9 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader2' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES DIGESTIFS</div>";
-            text += "        			<div id='colexpand4' class='col-1 qhright'></div>";
+            text += "      			<th class='table-secondary' colspan='2'>";
+            text += "        			<div class='col-8 float-start fw-normal'>SYMPTÔMES DIGESTIFS</div>";
+            text += "        			<div id='colexpand4' class='col-1 float-end'><i class='fa-solid fa-angle-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>";            
             text += "<?php                        
@@ -196,7 +197,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr3'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i+$nb1."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i+$nb1."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -211,7 +212,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                         
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr3' colspan='2'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt3'>Total&nbsp;&nbsp;".$q15+$q16+$q17+$q18+$q19+$q20+$q21+$q22+$q23."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt3'>Total&nbsp;&nbsp;".$q15+$q16+$q17+$q18+$q19+$q20+$q21+$q22+$q23."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -224,9 +225,9 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader2' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES CUTANES</div>";
-            text += "        			<div id='colexpand5' class='col-1 qhright'></div>";
+            text += "      			<th class='table-secondary' colspan='2'>";
+            text += "        			<div class='col-8 float-start fw-normal'>SYMPTÔMES CUTANES</div>";
+            text += "        			<div id='colexpand5' class='col-1 float-end'><i class='fa-solid fa-angle-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>";            
             text += "<?php                        
@@ -241,7 +242,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr4'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i+$nb1."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i+$nb1."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -256,7 +257,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                         
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr4'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt4'>Total&nbsp;&nbsp;".$q24+$q25."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt4'>Total&nbsp;&nbsp;".$q24+$q25."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -269,9 +270,9 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader2' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES ORL</div>";
-            text += "        			<div id='colexpand6' class='col-1 qhright'></div>";
+            text += "      			<th class='table-secondary' colspan='2'>";
+            text += "        			<div class='col-8 float-start fw-normal'>SYMPTÔMES ORL</div>";
+            text += "        			<div id='colexpand6' class='col-1 float-end'><i class='fa-solid fa-angle-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>";            
             text += "<?php                        
@@ -289,7 +290,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr5'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i+$nb1."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i+$nb1."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -304,7 +305,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                         
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr5'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt5'>Total&nbsp;&nbsp;".$q26+$q27+$q28+$q29+$q30."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt5'>Total&nbsp;&nbsp;".$q26+$q27+$q28+$q29+$q30."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -317,9 +318,9 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader2' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>SYMPTÔMES URO-GENITAUX</div>";
-            text += "        			<div id='colexpand7' class='col-1 qhright'></div>";
+            text += "      			<th class='table-secondary' colspan='2'>";
+            text += "        			<div class='col-8 float-start fw-normal'>SYMPTÔMES URO-GENITAUX</div>";
+            text += "        			<div id='colexpand7' class='col-1 float-end'><i class='fa-solid fa-angle-down'></i></div>";
             text += "        		</th>";			
             text += "        	</tr>";            
             text += "<?php                        
@@ -339,7 +340,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='qtr6'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <select id='q".$i+$nb1."' name='DG-resistance'>";
+                            $text .= "      <select class='form-select' id='q".$i+$nb1."' name='DG-resistance'>";
                             $text .= "          <option value='0'>Selection</option>";
                             $text .= "          <option value='1'>Absent</option>";
                             $text .= "          <option value='2'>Peu fréquent</option>";
@@ -354,7 +355,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                         
                         if($_SESSION["Data"]["level"]<=1){
                             $text .= "<tr name='qtr6'>";
-                            $text .= "<td class='qtotal' colspan='2' id='qtt6'>Total&nbsp;&nbsp;".$q31+$q32+$q33+$q34+$q35+$q36+$q37."</td>";
+                            $text .= "<td class='table-info float-end fw-bold' colspan='2' id='qtt6'>Total&nbsp;&nbsp;".$q31+$q32+$q33+$q34+$q35+$q36+$q37."</td>";
                             $text .= "</tr>";
                         }
                         echo $text;
@@ -1195,10 +1196,10 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>Evaluation risque résistance à l’insuline, prédiabète, diabète</div>";
-            text += "        			<div id='colexpand8' class='col-1 qhright'></div>";
-            text += "        		</th>";			
+            text += "      			<th class='table-primary' colspan='2'>";
+            text += "        			<div class='col-8 float-start'>Evaluation risque résistance à l’insuline, prédiabète, diabète</div>";
+            text += "        			<div id='colexpand8' class='col-1 float-end'><i class='fa-solid fa-angles-down'></i></div>";
+            text += "        		</th>";	           			
             text += "        	</tr>"; 
             text += "<?php                        
                         $text = "";
@@ -1224,13 +1225,13 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='htr1'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <div class='ho-radio col1'>";
-                            $text .= "          <input type='radio' id='h".$i."non' name='ho-radio-".$i."' value='0'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Non</label>";
-                            $text .= "          <input type='radio' id='h".$i."oui' name='ho-radio-".$i."' value='1'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Oui</label>";
+                            $text .= "      <div class='form-check'>";
+                            $text .= "          <div class='d-inline-block'><input type='radio' class='form-check-input' id='h".$i."non' name='ho-radio-".$i."' value='0'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Non</label></div>";
+                            $text .= "          <div class='d-inline-block ms-5'><input type='radio' class='form-check-input' id='h".$i."oui' name='ho-radio-".$i."' value='1'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Oui</label></div>";
                             $text .= "      </div>";
-                            $text .= "      <select id='h".$i."' name='HO-resistance'>";
+                            $text .= "      <select class='form-select' id='h".$i."' name='HO-resistance'>";
                             $text .= "          <option value='2'>Selection</option>";
                             $text .= "          <option value='3'>Rarement (1 f/mois)</option>";
                             $text .= "          <option value='4'>Parfois (+1 f/mois)</option>";
@@ -1249,10 +1250,10 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>Evaluation de la thyroîde</div>";
-            text += "        			<div id='colexpand9' class='col-1 qhright'></div>";
-            text += "        		</th>";			
+            text += "      			<th class='table-primary' colspan='2'>";
+            text += "        			<div class='col-8 float-start'>Evaluation de la thyroîde</div>";
+            text += "        			<div id='colexpand9' class='col-1 float-end'><i class='fa-solid fa-angles-down'></i></div>";
+            text += "        		</th>";	            			
             text += "        	</tr>";
             text += "<?php                        
                         $text = "";
@@ -1290,13 +1291,13 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='htr2'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <div class='ho-radio col1'>";
-                            $text .= "          <input type='radio' id='h".$i+$nb1."non' name='ho-radio-".$i+$nb1."' value='0'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Non</label>";
-                            $text .= "          <input type='radio' id='h".$i+$nb1."oui' name='ho-radio-".$i+$nb1."' value='1'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Oui</label>";
+                            $text .= "      <div class='form-check'>";
+                            $text .= "          <div class='d-inline-block'><input type='radio' class='form-check-input' id='h".$i+$nb1."non' name='ho-radio-".$i+$nb1."' value='0'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Non</label></div>";
+                            $text .= "          <div class='d-inline-block ms-5'><input type='radio' class='form-check-input' id='h".$i+$nb1."oui' name='ho-radio-".$i+$nb1."' value='1'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Oui</label></div>";                            
                             $text .= "      </div>";
-                            $text .= "      <select id='h".$i+$nb1."' name='HO-resistance'>";
+                            $text .= "      <select class='form-select' id='h".$i+$nb1."' name='HO-resistance'>";
                             $text .= "          <option value='2'>Selection</option>";
                             $text .= "          <option value='3'>Rarement (1 f/mois)</option>";
                             $text .= "          <option value='4'>Parfois (+1 f/mois)</option>";
@@ -1315,10 +1316,10 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
             text += " 	<div class='col-11'>";
             text += "  		<table class='qtable'>";
             text += "        	<tr>";
-            text += "      			<th class='qheader' colspan='2'>";
-            text += "        			<div class='col-8 qhleft'>Evaluation cortisol bas</div>";
-            text += "        			<div id='colexpand10' class='col-1 qhright'></div>";
-            text += "        		</th>";			
+            text += "      			<th class='table-primary' colspan='2'>";
+            text += "        			<div class='col-8 float-start'>Evaluation cortisol bas</div>";
+            text += "        			<div id='colexpand10' class='col-1 float-end'><i class='fa-solid fa-angles-down'></i></div>";
+            text += "        		</th>";            			
             text += "        	</tr>";
             text += "<?php                        
                         $text = "";
@@ -1367,13 +1368,13 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                             $text .= "<tr name='htr3'>";
                             $text .= "  <td class='qtd'>".$titles[$i]."</td>";
                             $text .= "  <td class='qtd'>";
-                            $text .= "      <div class='ho-radio c Fréquence cardiaque élevéeol1'>";
-                            $text .= "          <input type='radio' id='h".$i+$nb1."non' name='ho-radio-".$i+$nb1."' value='0'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Non</label>";
-                            $text .= "          <input type='radio' id='h".$i+$nb1."oui' name='ho-radio-".$i+$nb1."' value='1'>";
-                            $text .= "          <label for='h1no' name='ho-radio'>Oui</label>";
+                            $text .= "      <div class='form-check'>";
+                            $text .= "          <div class='d-inline-block'><input type='radio' class='form-check-input' id='h".$i+$nb1."non' name='ho-radio-".$i+$nb1."' value='0'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Non</label></div>";
+                            $text .= "          <div class='d-inline-block ms-5'><input type='radio' class='form-check-input' id='h".$i+$nb1."oui' name='ho-radio-".$i+$nb1."' value='1'>";
+                            $text .= "          <label for='h1no' class='form-check-label' name='ho-radio'>Oui</label></div>";
                             $text .= "      </div>";
-                            $text .= "      <select id='h".$i+$nb1."' name='HO-resistance'>";
+                            $text .= "      <select class='form-select' id='h".$i+$nb1."' name='HO-resistance'>";
                             $text .= "          <option value='2'>Selection</option>";
                             $text .= "          <option value='3'>Rarement (1 f/mois)</option>";
                             $text .= "          <option value='4'>Parfois (+1 f/mois)</option>";
@@ -5213,7 +5214,7 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                 	    $text .= " h".$i.":sh".$i.", ";
                 	}
                 	
-                	$nb3 = 30;
+                	/* $nb3 = 30;
                 	for ($i = 1; $i <= $nb3; $i++) {
                 	    $text .= " s".$i.":ss".$i.", ";
                 	}
@@ -5255,8 +5256,8 @@ if(isset($_SESSION["hasFormValues"]) && $_SESSION["hasFormValues"]==TRUE){
                 	
                 	$nb11 = 83;
                 	for ($i = 1; $i <= $nb11; $i++) {
-                	    $text .= " x".$i.":sx".$i.", ";
-                	}
+                	    $text .= " x".$i.":sx".$i.", "; 
+                	}*/
                 	
                 	echo $text;                	
             	?>          	                	     	           	            	            	        	            	                	

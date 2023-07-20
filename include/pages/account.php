@@ -17,12 +17,19 @@ session_start();
                 Mot de passe
             </span>
         </li>
-        <li class="nav-item" role="presentation">
-            <span class="nav-link" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="button" id="cl">
-                <i class="fa-solid fa-users"></i>
-                Utilisateurs
-            </span>
-        </li>
+        <?php             
+            if($_SESSION["Data"]["level"]<=1 || $_SESSION["Data"]["level"]==4){
+                $txt = "";
+                $txt .= "<li class='nav-item' role='presentation'>";
+                $txt .= "    <span class='nav-link' data-bs-toggle='tab' aria-selected='false' tabindex='-1' role='button' id='cl'>";
+                $txt .= "       <i class='fa-solid fa-users'></i>";
+                $txt .= "        Utilisateurs";
+                $txt .= "    </span>";
+                $txt .= "</li>";
+                echo $txt;
+            }
+    	?>   
+
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade show px-2 active" id="mydata" role="tabpanel">

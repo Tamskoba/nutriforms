@@ -107,7 +107,7 @@ if(isset($_POST))
          $requete->execute();
          
          /* ----------- update snc table ---------------------- */
-         $text = "UPDATE snc SET";
+         /* $text = "UPDATE snc SET";
          $text2 = $text;
          
          $nb = 30;
@@ -147,7 +147,7 @@ if(isset($_POST))
 
          /* ----------- update potassium table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE potassium SET";
+         /* $text = "UPDATE potassium SET";
          $text2 = $text;
          
          $nb = 9;
@@ -183,11 +183,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
 
          /* ----------- update vitamine D table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE vitamine_d SET";
+         /* $text = "UPDATE vitamine_d SET";
          $text2 = $text;
          
          $nb = 9;
@@ -223,11 +223,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
 
          /* ----------- update anxiété table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE anxiete SET";
+         /* $text = "UPDATE anxiete SET";
          $text2 = $text;
          
          $nb = 14;
@@ -267,7 +267,7 @@ if(isset($_POST))
 
          /* ----------- update gaba table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE gaba SET";
+         /*$text = "UPDATE gaba SET";
          $text2 = $text;
          
          $nb = 30;
@@ -303,11 +303,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
  
          /* ----------- update lgs table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE lgs SET";
+         /* $text = "UPDATE lgs SET";
          $text2 = $text;
          
          $nb = 26;
@@ -343,11 +343,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
          
          /* ----------- update spasmophile table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE spasmophile SET";
+         /* $text = "UPDATE spasmophile SET";
          $text2 = $text;
          
          $nb = 13;
@@ -383,11 +383,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
 
          /* ------------- update sommeil table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE sommeil SET";
+         /* $text = "UPDATE sommeil SET";
          $text2 = $text;
          
          $nb = 10;
@@ -423,11 +423,11 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */
 
          /* ------------- update detox table ---------------------- */
          /* --------------------------------------------------------- */
-         $text = "UPDATE detox SET";
+         /* $text = "UPDATE detox SET";
          $text2 = $text;
          
          $nb = 83;
@@ -463,7 +463,7 @@ if(isset($_POST))
          }
          fwrite($file, $text2 . PHP_EOL);
          
-         $requete->execute();
+         $requete->execute(); */ 
          
          echo "Les modifications ont été enregistrée.";
          fwrite($file, "Les données ont été enregistrées". PHP_EOL);

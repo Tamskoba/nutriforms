@@ -47,7 +47,18 @@ session_start();
         			 echo        "</select>";
     			     echo    "</td>";
 			         echo "</tr>"; 
-			     }			
+			     }elseif($_SESSION["Data"]["level"]==4){
+					echo "<tr>";
+					echo    "<td><label>Accès</label></td>";
+					echo    "<td>";
+					echo        "<select id='ulevel' name='level'>";
+					echo	         "<option value='3'>Client</option>";
+					echo        "</select>";
+					echo    "</td>";
+					echo "</tr>"; 					
+				 }
+
+
 			?>
 			<tr>
 				<td colspan="2"><input type="hidden" id="userid"></td>
@@ -104,7 +115,7 @@ session_start();
         			 echo        "</select>";
     			     echo    "</td>";
 			         echo "</tr>"; 
-			     }elseif($_SESSION["Data"]["level"]==1){
+			     }elseif($_SESSION["Data"]["level"]==1 || $_SESSION["Data"]["level"]==4){
 			         echo "<tr>";
 			         echo    "<td><label>Accès</label></td>";
 			         echo    "<td>";

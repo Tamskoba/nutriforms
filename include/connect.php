@@ -7,16 +7,24 @@
 		<title>Connexion</title>
 		<script src="lib\global.js"></script>		
     	<script src="lib\jquery-3.6.3.js"></script>
-    	<link href='css\style4.css' rel='stylesheet' type='text/css'/> 
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">  		
+    	<link href='css\style4.css' rel='stylesheet' type='text/css'/>
+		<link href='css\bootstrap.min.css' rel='stylesheet' type='text/css'/> 		 
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/3c6b498a1b.js" crossorigin="anonymous"></script>  		
 	</head>
     <body>
-    	<div class="header">
-        	<h1>Connexion</h1>
+		<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+			<div class="container-fluid">
+				<span class="navbar-brand fs-2">Votre espace personnel</span>
+			</div>
+		</nav>
+
+    	<div class="text-center">
+        	<h1 class="text-center"><b>Connexion</b></h1>
     	</div>
     	<div class="row">
-    		<div class="col-12 divAlign" id="connectDiv">
-            	<div id="formholder" class="centralholder">
+    		<div class="col-12 mx-auto" id="connectDiv">
+            	<div id="formholder" class="">
         			<table>
         				<tr>
         					<td><label>Login</label></td>
@@ -28,11 +36,11 @@
         				</tr>
         				<tr>
         					<td colspan="2">
-        						<div id="submit" class="connectbtn">Se connecter</div>
+								<button id="submit" type="button" class="btn btn-primary">
+									<i class="fa-solid fa-right-to-bracket"></i>
+									Se connecter
+								</button>
         					</td>
-        				</tr>
-        				<tr>
-        					<td colspan="2"><div id="forgot" class="forgotten">Mot de passe oublié ?</div></td>
         				</tr>
         				<tr>
         					<td colspan="2">

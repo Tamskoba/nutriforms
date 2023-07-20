@@ -100,7 +100,7 @@
               </div>
     	</div>    	    	
     	<div class="row ">
-			<div id="myTabContent" class="tab-content">
+			<div id="myTabContent" class="tab-content m-1">
 				<div class="tab-pane fade show px-2 active" id="zoneTab" role="tabpanel">
 					<p>Le tableau de bord</p>
 				</div>
