@@ -7,7 +7,9 @@ L'application est accessible via des identifiants de connexion (email et mot de 
 
 ## Pour commencer
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+Avant de lancer le projet, il faut installer la base de données :
+ - Executer la fichier install.html via le navigateur web qui va créer la base de données et y insérer les données necéssaires pour l'execution du projet.
+ - Effacer le fichier install.html et executer le projet.
 
 ### Pré-requis
 
